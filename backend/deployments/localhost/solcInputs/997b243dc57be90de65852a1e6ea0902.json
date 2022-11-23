@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/TestContracts/callme.sol": {
+      "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.9;\r\n\r\ncontract CallMe {\r\n    uint public i;\r\n\r\n    function callMe(uint j) public {\r\n        i += j;\r\n    }\r\n\r\n    function getData() public pure returns (bytes memory) {\r\n        return abi.encodeWithSignature(\"callMe(uint256)\", 123);\r\n    }\r\n}\r\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 1000
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

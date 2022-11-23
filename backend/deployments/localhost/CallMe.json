@@ -1,0 +1,95 @@
+{
+  "address": "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "j",
+          "type": "uint256"
+        }
+      ],
+      "name": "callMe",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getData",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "i",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x17122aff02a4558f2c74d3a24f5c62ec5cb02b4aae7876f084873004d7c5df62",
+  "receipt": {
+    "to": null,
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "contractAddress": "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853",
+    "transactionIndex": 0,
+    "gasUsed": "160591",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x3cbdc178e71fa83daf6e8cd458ef5b309445f1246bb77b5d7f4af45827b943ad",
+    "transactionHash": "0x17122aff02a4558f2c74d3a24f5c62ec5cb02b4aae7876f084873004d7c5df62",
+    "logs": [],
+    "blockNumber": 8,
+    "cumulativeGasUsed": "160591",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "997b243dc57be90de65852a1e6ea0902",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"j\",\"type\":\"uint256\"}],\"name\":\"callMe\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getData\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"i\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/TestContracts/callme.sol\":\"CallMe\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"contracts/TestContracts/callme.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity ^0.8.9;\\r\\n\\r\\ncontract CallMe {\\r\\n    uint public i;\\r\\n\\r\\n    function callMe(uint j) public {\\r\\n        i += j;\\r\\n    }\\r\\n\\r\\n    function getData() public pure returns (bytes memory) {\\r\\n        return abi.encodeWithSignature(\\\"callMe(uint256)\\\", 123);\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x7a66cc524093faf463b7e05c4b40f656edbe9d4326a6775e348d10f8f087ac30\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506101f4806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80633bc5de3014610046578063e5aa3d58146100cc578063e73620c3146100e3575b600080fd5b6100b6604051607b602482015260609060440160408051601f198184030181529190526020810180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff167fe73620c300000000000000000000000000000000000000000000000000000000179052919050565b6040516100c39190610111565b60405180910390f35b6100d560005481565b6040519081526020016100c3565b6100f66100f1366004610166565b6100f8565b005b80600080828254610109919061017f565b909155505050565b600060208083528351808285015260005b8181101561013e57858101830151858201604001528201610122565b81811115610150576000604083870101525b50601f01601f1916929092016040019392505050565b60006020828403121561017857600080fd5b5035919050565b600082198211156101b9577f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b50019056fea26469706673582212200b5fe80368b69febace153b69bb9ff7e14e0ec12e5bd9143f6746c714441484664736f6c63430008090033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80633bc5de3014610046578063e5aa3d58146100cc578063e73620c3146100e3575b600080fd5b6100b6604051607b602482015260609060440160408051601f198184030181529190526020810180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff167fe73620c300000000000000000000000000000000000000000000000000000000179052919050565b6040516100c39190610111565b60405180910390f35b6100d560005481565b6040519081526020016100c3565b6100f66100f1366004610166565b6100f8565b005b80600080828254610109919061017f565b909155505050565b600060208083528351808285015260005b8181101561013e57858101830151858201604001528201610122565b81811115610150576000604083870101525b50601f01601f1916929092016040019392505050565b60006020828403121561017857600080fd5b5035919050565b600082198211156101b9577f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b50019056fea26469706673582212200b5fe80368b69febace153b69bb9ff7e14e0ec12e5bd9143f6746c714441484664736f6c63430008090033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3,
+        "contract": "contracts/TestContracts/callme.sol:CallMe",
+        "label": "i",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

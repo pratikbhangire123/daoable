@@ -1,0 +1,25 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.13",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "ethers": "^5.5.4",
+    "hardhat": "^2.10.2",
+    "hardhat-deploy": "^0.11.12",
+    "web3": "^1.7.5"
+  },
+  "dependencies": {
+    "@erc725/smart-contracts": "^3.1.2",
+    "@lukso/lsp-smart-contracts": "^0.6.2",
+    "@openzeppelin/contracts": "^4.7.3"
+  }
+}

@@ -1,0 +1,9 @@
+[
+    {
+        "name": "LSPGovernanceContracts[]",
+        "key": "0xbc8d4dc68260eebd9b3bf6e534ea6adbe6461c244929406d6c1adf1ca0610c10",
+        "keyType": "Array",
+        "valueType": "address",
+        "valueContent": "Address"
+    }
+]
